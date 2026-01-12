@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        div{
+            height: 500px;
+            width: 500px;
+            background-color: red;
+            border: 1px solid #000;
+        }
+    </style>
+    <script>
+        function big(x){
+            x.style.height = "65px";
+            x.style.width = "65px";
+        }
+        function normal(x){
+            x.style.height = "32px";
+            x.style.width = "32px";
+        }
+    </script>
+</head>
+<body>
+    <div onmouseenter="big(this)" onmouseleave="normal(this)">
+        Test 
+    </div>
+</body>
+</html>

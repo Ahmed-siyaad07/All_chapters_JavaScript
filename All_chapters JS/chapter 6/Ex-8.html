@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multi selector</title>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script> 
+        $(document).ready(function(){
+            $("#main-heading").css("color","blue")
+            $(".content").addClass("highlight");
+            $("button").text("click here!").css("color","yellow");
+            $("*").css("border","1px solid red")
+
+        })
+    </script>
+</head>
+<body>
+   <h1 id="main-heading">main-heading</h1>
+   <p class="content">some content.</p> 
+   <p class="content">more content.</p> 
+   <button class="btn">click me!</button>
+   <div>this is a div element.</div>
+
+</body>
+</html>

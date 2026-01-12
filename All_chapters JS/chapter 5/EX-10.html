@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        div{
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            border: 1px solid #000;
+        }
+    </style>
+    <script>
+        function cm(){
+            alert("You right-clicked inside the div");
+        }
+    </script>
+</head>
+<body>
+    <div oncontextmenu="cm()" contextmenu="menu">this is the DIV</div>
+</body>
+</html>
